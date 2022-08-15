@@ -1,0 +1,12 @@
+:root {
+  --bg: #ebecee;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+header {
+  background-color: var(--white);
+}
