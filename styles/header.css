@@ -1,0 +1,75 @@
+.header {
+  padding: 1rem 1.5rem;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.header > .container:first-child {
+  gap: 1.5rem;
+}
+
+.header > .container:last-child {
+  gap: 0.5rem;
+}
+
+.header > .container > img {
+  cursor: pointer;
+}
+
+.header .header__hamburger-menu {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  background-image: url("../images/menu.svg");
+  cursor: pointer;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:checked ~ .nav-expended {
+  display: block;
+}
+.nav-expended {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--white);
+  box-shadow: 0px 8px 8px var(--shadow);
+}
+
+.nav-expended > strong {
+  display: block;
+  padding: 1.5rem 1.5rem 1rem;
+  color: var(--secondary);
+}
+
+.nav-expended > nav > ul {
+  list-style: none;
+}
+
+.nav-expended > nav > ul > li {
+  padding: 1rem 1.5rem;
+}
+
+.nav-expended > nav > ul > li > a {
+  background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  text-transform: uppercase;
+}

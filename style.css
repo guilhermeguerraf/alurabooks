@@ -1,3 +1,6 @@
+@import url("./styles/header.css");
+
+/* RESET */
 * {
   padding: 0;
   border: none;
@@ -5,39 +8,19 @@
   box-sizing: border-box;
 }
 
+/* VARIABLES */
 :root {
   --bg: #ebecee;
+  --secondary: #eb9b00;
   --white: #ffffff;
+  --font-default: "Poppins", sans-serif;
+  --shadow: rgba(0, 0, 0, 0.25);
 }
 
+/* GLOBAL */
 body {
   background-color: var(--bg);
-}
-
-.header {
-  padding: 1rem 1.5rem;
-  background-color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header > .container {
-  display: flex;
-  align-items: center;
-}
-
-.header > .container:first-child {
-  gap: 1.5rem;
-}
-
-.header > .container:last-child {
-  gap: 0.5rem;
-}
-
-.header .header__hamburger-menu {
-  width: 3rem;
-  height: 3rem;
-  display: inline-block;
-  background-image: url("./images/menu.svg");
+  font-family: var(--font-default);
+  font-size: 16px;
+  font-weight: 400;
 }
