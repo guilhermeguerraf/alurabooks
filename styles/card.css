@@ -1,0 +1,49 @@
+.card {
+  width: 100%;
+  max-width: 380px;
+  padding: 1rem 1rem 1.5rem;
+  border-radius: 0.625rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  background-color: var(--white);
+}
+
+.card__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card strong {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.card__title {
+  color: var(--primary);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__description {
+  color: var(--black-font-fill);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.card__link {
+  padding: 0.85rem 1rem;
+  background-color: var(--secondary);
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}

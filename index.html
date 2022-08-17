@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- SWIPERJS -->
+    <!-- SWIPER -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -49,7 +49,7 @@
     </header>
     <main>
       <section class="banner">
-        <h2 class="banner__heading">Já sabe por onde começar?</h2>
+        <strong class="banner__heading">Já sabe por onde começar?</strong>
         <p class="banner__paragraph">
           Encontre em nossa estante o que precisa para seu desenvolvimento!
         </p>
@@ -102,8 +102,40 @@
             <div class="swiper-button-next"></div>
           </div>
         </div>
+        <div class="card">
+          <div class="card__column">
+            <strong>Talvez você se interesse por...</strong>
+            <h3 class="card__title">Angular 11 e Firebase</h3>
+            <p class="card__description">
+              Construindo uma aplicação integrada com a plataforma do Google.
+            </p>
+
+            <div class="card__actions">
+              <img
+                src="./images/icons/favorites.svg"
+                alt="Favoritar livro"
+                class="card__action"
+              />
+              <img
+                src="./images/icons/shopping-bag.svg"
+                alt="Adicionar livro à sacola"
+                class="card__action"
+              />
+            </div>
+          </div>
+          <div class="card__column">
+            <img
+              src="./images/ilustracao-angular.svg"
+              alt="Livro Angular 11 e Firebase"
+              class="card__image"
+            />
+            <a href="#" class="card__link">Saiba mais</a>
+          </div>
+        </div>
       </section>
     </main>
+
+    <!-- SWIPER -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
