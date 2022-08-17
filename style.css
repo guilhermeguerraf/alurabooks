@@ -1,5 +1,6 @@
 @import url("./styles/header.css");
 @import url("./styles/banner.css");
+@import url("./styles/carousel.css");
 
 /* RESET */
 * {
@@ -12,15 +13,16 @@
 /* VARIABLES */
 :root {
   --bg: #ebecee;
-  --secondary: #eb9b00;
-  --white: #ffffff;
-  --font-default: "Poppins", sans-serif;
-  --shadow: rgba(0, 0, 0, 0.25);
   --primary-gradient: linear-gradient(
     97.54deg,
     #002f52 35.49%,
     #326589 165.37%
   );
+  --secondary: #eb9b00;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.25);
+
+  --font-default: "Poppins", sans-serif;
 }
 
 /* GLOBAL */
@@ -30,4 +32,18 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.section {
+  padding-bottom: 1rem;
+}
+
+.section__title {
+  padding-block: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--white);
+  color: var(--secondary);
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
 }

@@ -1,0 +1,13 @@
+.swiper-pagination {
+  position: initial;
+  margin-bottom: 1rem;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}

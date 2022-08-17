@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AluraBooks</title>
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- SWIPERJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -32,23 +39,86 @@
           </nav>
         </div>
 
-        <img src="./images/logo.svg" alt="Logo da Alurabooks" />
+        <img src="./images/icons/logo.svg" alt="Logo da Alurabooks" />
       </div>
       <div class="container">
-        <img src="./images/favorites.svg" alt="Meus favoritos" />
-        <img src="./images/shopping-bag.svg" alt="Sacola de compras" />
-        <img src="./images/user.svg" alt="Meu perfil" />
+        <img src="./images/icons/favorites.svg" alt="Meus favoritos" />
+        <img src="./images/icons/shopping-bag.svg" alt="Minhas compras" />
+        <img src="./images/icons/user.svg" alt="Meu perfil" />
       </div>
     </header>
-
-    <div class="banner">
-      <h2 class="banner__heading">Já sabe por onde começar?</h2>
-      <p class="banner__paragraph">
-        Encontre em nossa estante o que precisa para seu desenvolvimento!
-      </p>
-      <div class="banner__input">
-        <input type="text" placeholder="Qual será sua próxima leitura?" />
-      </div>
-    </div>
+    <main>
+      <section class="banner">
+        <h2 class="banner__heading">Já sabe por onde começar?</h2>
+        <p class="banner__paragraph">
+          Encontre em nossa estante o que precisa para seu desenvolvimento!
+        </p>
+        <div class="banner__input">
+          <input type="text" placeholder="Qual será sua próxima leitura?" />
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section__title">Últimos Lançamentos</h2>
+        <div class="carousel">
+          <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="./images/livro-apache-kafka.png"
+                  alt="Livro Apache Kafka e Spring Boot"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/livro-liderança.png"
+                  alt="Livro Liderança em Design"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/livro-javascript.png"
+                  alt="Livro JavaScript Assertivo "
+                />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/livro-portugol.png" alt="Livro Portugol" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/livro-nodejs.png" alt="Livro NodeJS" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/livro-react-native.png"
+                  alt="Livro React Native"
+                />
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
