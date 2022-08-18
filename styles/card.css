@@ -16,9 +16,19 @@
   justify-content: space-between;
 }
 
-.card strong {
+.card__emphasis {
   color: var(--secondary);
   margin-bottom: 0.5rem;
+}
+
+.card__emphasis--author::before {
+  content: "";
+  height: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  background-image: url("../images/icons/stars.svg");
+  background-repeat: no-repeat;
+  background-position: initial;
 }
 
 .card__title {
