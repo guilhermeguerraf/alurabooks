@@ -1,0 +1,30 @@
+.section--newsletter {
+  padding: 1.5rem 1.5rem 2rem;
+  background-color: var(--white);
+}
+
+.newsletter--heading {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.newsletter__description {
+  font-weight: 300;
+  background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section--newsletter > .input {
+  justify-content: initial;
+}
+
+.section--newsletter > .input::before {
+  background-image: url("../images/icons/email.svg");
+}
