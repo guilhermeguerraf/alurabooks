@@ -16,6 +16,7 @@
 /* VARIABLES */
 :root {
   --bg: #ebecee;
+  --bg-light: #f9f9f9;
   --primary: #002f52;
   --primary-gradient: linear-gradient(
     97.54deg,
@@ -24,6 +25,8 @@
   );
   --secondary: #eb9b00;
   --white: #ffffff;
+  --grey: #858585;
+  --black: #000000;
   --black-font-fill: rgba(0, 0, 0, 0.85);
   --shadow: rgba(0, 0, 0, 0.25);
 
@@ -39,6 +42,14 @@ body {
   line-height: 1.5;
 }
 
+hr {
+  width: 100%;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  background-color: var(--grey);
+}
+
 .section {
   margin-bottom: 1.5rem;
 }
@@ -51,6 +62,16 @@ body {
   font-size: 1.25rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.footer {
+  padding: 1.5rem;
+  background-color: var(--bg-light);
+}
+
+.footer__text {
+  font-size: 1.25rem;
+  color: var(--black);
 }
 
 .input {

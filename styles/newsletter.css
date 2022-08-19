@@ -25,6 +25,10 @@
   justify-content: initial;
 }
 
+.section--newsletter > .input > input {
+  font-size: 1rem;
+}
+
 .section--newsletter > .input::before {
   background-image: url("../images/icons/email.svg");
 }
