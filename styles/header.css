@@ -75,3 +75,53 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.header__logo {
+  display: flex;
+  gap: 0.652rem;
+  user-select: none;
+}
+
+.logo__name-page {
+  display: none;
+  color: var(--black);
+  font-family: var(--font-header);
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: default;
+}
+
+.header__nav > .nav__list {
+  display: none;
+}
+
+.nav__list > .nav__item,
+.nav__list > .nav__item > a {
+  color: var(--black);
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .header .header__hamburger-menu {
+    display: none;
+  }
+
+  .logo__name-page {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .header__nav > .nav__list {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .header > .container > img:first-child {
+    display: none;
+  }
+}
