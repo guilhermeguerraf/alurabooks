@@ -18,6 +18,10 @@
 
 @media screen and (min-width: 1024px) {
   .carousel {
+    margin-bottom: 4rem;
+  }
+
+  .swiper {
     max-width: 800px;
     margin: 0 auto;
   }

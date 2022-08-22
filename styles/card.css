@@ -57,3 +57,17 @@
   text-decoration: none;
   text-align: center;
 }
+
+@media screen and (min-width: 1024px) {
+  .card {
+    max-width: 588px;
+  }
+
+  .card__column {
+    gap: 2.5rem;
+  }
+
+  .card__description {
+    font-size: 1rem;
+  }
+}
