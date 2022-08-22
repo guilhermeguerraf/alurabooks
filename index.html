@@ -26,8 +26,8 @@
   <body>
     <header class="header">
       <div class="container">
-        <input type="checkbox" name="menu" id="menu" />
-        <label for="menu">
+        <input type="checkbox" name="hamburger-menu" id="hamburger-menu" />
+        <label for="hamburger-menu">
           <span class="header__hamburger-menu"></span>
         </label>
         <div class="nav-expended">
@@ -51,7 +51,21 @@
 
       <nav class="header__nav">
         <ul class="nav__list">
-          <li class="nav__item">Categorias</li>
+          <li class="nav__item">
+            <input type="checkbox" name="dropdown-menu" id="dropdown-menu" />
+            <label for="dropdown-menu">Categorias</label>
+            <div class="nav-expended">
+              <nav>
+                <ul>
+                  <li><a href="#">Programação</a></li>
+                  <li><a href="#">Front-end</a></li>
+                  <li><a href="#">Infraestrutura</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="#">Design & UX</a></li>
+                </ul>
+              </nav>
+            </div>
+          </li>
           <li class="nav__item"><a href="#">Favoritos</a></li>
           <li class="nav__item"><a href="#">Minha estante</a></li>
         </ul>

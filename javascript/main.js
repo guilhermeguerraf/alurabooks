@@ -1,5 +1,5 @@
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 2.5,
+  slidesPerView: 3,
   spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",

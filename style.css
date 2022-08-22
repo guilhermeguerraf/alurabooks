@@ -77,7 +77,6 @@ hr {
 
 .input {
   width: 100%;
-  max-width: 476px;
   border: 1px solid var(--white);
   border-radius: 1.5rem;
   padding: 0.625rem 1.5rem;
@@ -134,6 +133,14 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
+  .section__title {
+    font-size: 1.75rem;
+  }
+
+  .input {
+    max-width: 476px;
+  }
+
   .input input {
     max-width: 245px;
     font-size: 1rem;

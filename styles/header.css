@@ -33,13 +33,22 @@
   cursor: pointer;
 }
 
-#menu {
+#hamburger-menu {
   display: none;
 }
 
-#menu:checked ~ .nav-expended {
+#hamburger-menu:checked ~ .nav-expended {
   display: block;
 }
+
+#dropdown-menu {
+  display: none;
+}
+
+#dropdown-menu:checked ~ .nav-expended {
+  display: block;
+}
+
 .nav-expended {
   width: 100%;
   max-width: 300px;
@@ -47,7 +56,6 @@
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
   z-index: 10;
   background-color: var(--white);
   box-shadow: 0px 8px 8px var(--shadow);
