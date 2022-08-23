@@ -32,3 +32,13 @@
   font-weight: 700;
   text-decoration: none;
 }
+
+@media screen and (min-width: 1024px) {
+  .topics__heading {
+    font-size: 1.5rem;
+  }
+
+  .topics__link {
+    font-size: 1rem;
+  }
+}
