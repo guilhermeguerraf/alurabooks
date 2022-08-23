@@ -4,6 +4,7 @@
 @import url("./styles/card.css");
 @import url("./styles/topics.css");
 @import url("./styles/newsletter.css");
+@import url("./styles/footer.css");
 
 /* RESET */
 * {
@@ -26,6 +27,7 @@
   --secondary: #eb9b00;
   --white: #ffffff;
   --grey: #858585;
+  --grey-dark: #474646;
   --black: #000000;
   --black-font-fill: rgba(0, 0, 0, 0.85);
   --shadow: rgba(0, 0, 0, 0.25);
@@ -63,16 +65,6 @@ hr {
   font-size: 1.25rem;
   text-align: center;
   text-transform: uppercase;
-}
-
-.footer {
-  padding: 1.5rem;
-  background-color: var(--bg-light);
-}
-
-.footer__text {
-  font-size: 1.25rem;
-  color: var(--black);
 }
 
 .input {
