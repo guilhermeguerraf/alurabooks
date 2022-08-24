@@ -10,12 +10,12 @@
   font-size: 1.125rem;
 }
 
-.section--banner > .input::before {
+.section--banner .input::before {
   background-image: url("../images/icons/search.svg");
 }
 
 @media screen and (min-width: 1024px) {
-  .section--banner {
+  .section--banner .wrapper-container {
     height: 330px;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@
     font-size: 2.25rem;
   }
 
-  .section--banner > .input {
+  .section--banner .input {
     height: 56px;
   }
 }

@@ -1,6 +1,9 @@
 .footer {
   padding: 1.5rem;
   background-color: var(--bg-light);
+}
+
+.footer .wrapper-container {
   display: flex;
   justify-content: space-between;
 }

@@ -6,9 +6,6 @@
 }
 
 .header .wrapper-container {
-  width: 100%;
-  max-width: 1588px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -129,6 +126,10 @@
   text-decoration: none;
 }
 
+.header__link > span {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .header .header__hamburger-menu {
     display: none;
@@ -154,5 +155,9 @@
 @media screen and (min-width: 1728px) {
   .header__nav {
     margin-right: auto;
+  }
+
+  .header__link > span {
+    display: block;
   }
 }

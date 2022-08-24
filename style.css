@@ -53,6 +53,12 @@ hr {
   background-color: var(--grey);
 }
 
+.wrapper-container {
+  width: 100%;
+  max-width: 1588px;
+  margin: 0 auto;
+}
+
 .section {
   margin-bottom: 1.5rem;
 }
@@ -136,5 +142,16 @@ hr {
   .input input {
     max-width: 245px;
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .section .wrapper-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .input {
+    max-width: 586px;
   }
 }

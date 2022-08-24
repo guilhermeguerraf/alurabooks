@@ -2,6 +2,10 @@
   padding: 1.5rem 1.5rem 2rem;
   background-color: var(--white);
   display: flex;
+}
+
+.section--newsletter .wrapper-container {
+  display: flex;
   flex-direction: column;
 }
 
@@ -23,23 +27,23 @@
   background-clip: text;
 }
 
-.section--newsletter > .input {
+.section--newsletter .input {
   justify-content: initial;
 }
 
-.section--newsletter > .input > input {
+.section--newsletter .input > input {
   font-size: 1rem;
 }
 
-.section--newsletter > .input::before {
+.section--newsletter .input::before {
   background-image: url("../images/icons/email.svg");
 }
 
 @media screen and (min-width: 1024px) {
-  .section--newsletter {
+  .section--newsletter .wrapper-container {
     flex-direction: row;
-    gap: 1.5rem;
     justify-content: space-between;
+    gap: 1.5rem;
   }
 
   .newsletter--heading {
