@@ -25,56 +25,66 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <input type="checkbox" name="hamburger-menu" id="hamburger-menu" />
-        <label for="hamburger-menu">
-          <span class="header__hamburger-menu"></span>
-        </label>
-        <div class="nav-expended">
-          <strong>Categorias</strong>
-          <nav>
-            <ul>
-              <li><a href="#">Programação</a></li>
-              <li><a href="#">Front-end</a></li>
-              <li><a href="#">Infraestrutura</a></li>
-              <li><a href="#">Business</a></li>
-              <li><a href="#">Design & UX</a></li>
-            </ul>
-          </nav>
+      <div class="wrapper-container">
+        <div class="container">
+          <input type="checkbox" name="hamburger-menu" id="hamburger-menu" />
+          <label for="hamburger-menu">
+            <span class="header__hamburger-menu"></span>
+          </label>
+          <div class="nav-expended">
+            <strong>Categorias</strong>
+            <nav>
+              <ul>
+                <li><a href="#">Programação</a></li>
+                <li><a href="#">Front-end</a></li>
+                <li><a href="#">Infraestrutura</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Design & UX</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__logo">
+            <img src="./images/icons/logo.svg" alt="Logo da Alurabooks" />
+            <h1 class="logo__name-page"><b>Alura</b>Books</h1>
+          </div>
         </div>
 
-        <div class="header__logo">
-          <img src="./images/icons/logo.svg" alt="Logo da Alurabooks" />
-          <h1 class="logo__name-page"><b>Alura</b>Books</h1>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <input type="checkbox" name="dropdown-menu" id="dropdown-menu" />
+              <label for="dropdown-menu">Categorias</label>
+              <div class="nav-expended">
+                <nav>
+                  <ul>
+                    <li><a href="#">Programação</a></li>
+                    <li><a href="#">Front-end</a></li>
+                    <li><a href="#">Infraestrutura</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Design & UX</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </li>
+            <li class="nav__item"><a href="#">Favoritos</a></li>
+            <li class="nav__item"><a href="#">Minha estante</a></li>
+          </ul>
+        </nav>
+
+        <div class="container">
+          <a href="#" class="header__link">
+            <img src="./images/icons/favorites.svg" alt="Meus favoritos" />
+          </a>
+          <a href="#" class="header__link">
+            <img src="./images/icons/shopping-bag.svg" alt="Minha sacola" />
+            <span>Minha sacola</span>
+          </a>
+          <a href="#" class="header__link">
+            <img src="./images/icons/user.svg" alt="Meu perfil" />
+            <span>Meu perfil</span>
+          </a>
         </div>
-      </div>
-
-      <nav class="header__nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <input type="checkbox" name="dropdown-menu" id="dropdown-menu" />
-            <label for="dropdown-menu">Categorias</label>
-            <div class="nav-expended">
-              <nav>
-                <ul>
-                  <li><a href="#">Programação</a></li>
-                  <li><a href="#">Front-end</a></li>
-                  <li><a href="#">Infraestrutura</a></li>
-                  <li><a href="#">Business</a></li>
-                  <li><a href="#">Design & UX</a></li>
-                </ul>
-              </nav>
-            </div>
-          </li>
-          <li class="nav__item"><a href="#">Favoritos</a></li>
-          <li class="nav__item"><a href="#">Minha estante</a></li>
-        </ul>
-      </nav>
-
-      <div class="container">
-        <img src="./images/icons/favorites.svg" alt="Meus favoritos" />
-        <img src="./images/icons/shopping-bag.svg" alt="Minhas compras" />
-        <img src="./images/icons/user.svg" alt="Meu perfil" />
       </div>
     </header>
     <main>
@@ -297,104 +307,139 @@
       <ul class="footer__nav-list">
         <strong class="nav-list__title">Educação</strong>
         <li class="nav-list__item">
-          <img src="./images/alura-icons/Caelum.svg" alt="Ícone Caelum" />
-          <a href="#" class="nav-list__link">Caelum</a>
+          <a href="#" class="nav-list__link">
+            <img src="./images/alura-icons/Caelum.svg" alt="Ícone Caelum" />
+            Caelum
+          </a>
         </li>
         <li class="nav-list__item">
-          <img
-            src="./images/alura-icons/CasaDoCodigo.svg"
-            alt="Ícone Casa do código"
-          />
-          <a href="#" class="nav-list__link">Casa do Código</a>
+          <a href="#" class="nav-list__link">
+            <img
+              src="./images/alura-icons/CasaDoCodigo.svg"
+              alt="Ícone Casa do código"
+            />
+            Casa do Código
+          </a>
         </li>
       </ul>
       <ul class="footer__nav-list">
         <strong class="nav-list__title">Educação online</strong>
         <li class="nav-list__item">
-          <img src="./images/alura-icons/Alura.svg" alt="Ícone Alura" />
-          <a href="#" class="nav-list__link">Alura</a>
+          <a href="#" class="nav-list__link">
+            <img src="./images/alura-icons/Alura.svg" alt="Ícone Alura" />
+            Alura
+          </a>
         </li>
         <li class="nav-list__item">
-          <img
-            src="./images/alura-icons/AluraEmpresas.svg"
-            alt="Ícone Alura Para Empresas"
-          />
-          <a href="#" class="nav-list__link">Alura Para Empresas</a>
+          <a href="#" class="nav-list__link">
+            <img
+              src="./images/alura-icons/AluraEmpresas.svg"
+              alt="Ícone Alura Para Empresas"
+            />
+            Alura Para Empresas
+          </a>
         </li>
         <li class="nav-list__item">
-          <img
-            src="./images/alura-icons/AluraLATAM.svg"
-            alt="Ícone Alura LATAM"
-          />
-          <a href="#" class="nav-list__link">Alura LATAM</a>
+          <a href="#" class="nav-list__link">
+            <img
+              src="./images/alura-icons/AluraLATAM.svg"
+              alt="Ícone Alura LATAM"
+            />
+            Alura LATAM
+          </a>
         </li>
         <li class="nav-list__item">
-          <img
-            src="./images/alura-icons/AluraStart.svg"
-            alt="Ícone Alura Start"
-          />
-          <a href="#" class="nav-list__link">Alura Start</a>
+          <a href="#" class="nav-list__link">
+            <img
+              src="./images/alura-icons/AluraStart.svg"
+              alt="Ícone Alura Start"
+            />
+            Alura Start
+          </a>
         </li>
         <li class="nav-list__item">
-          <img src="./images/alura-icons/MusicDot.svg" alt="Ícone MusicDot" />
-          <a href="#" class="nav-list__link">MusicDot</a>
+          <a href="#" class="nav-list__link">
+            <img src="./images/alura-icons/MusicDot.svg" alt="Ícone MusicDot" />
+            MusicDot
+          </a>
         </li>
         <li class="nav-list__item">
-          <img
-            src="./images/alura-icons/AluraLingua.svg"
-            alt="Ícone Alura Língua"
-          />
-          <a href="#" class="nav-list__link">Alura Língua</a>
+          <a href="#" class="nav-list__link">
+            <img
+              src="./images/alura-icons/AluraLingua.svg"
+              alt="Ícone Alura Língua"
+            />
+            Alura Língua
+          </a>
         </li>
         <li class="nav-list__item">
-          <img src="./images/alura-icons/PM3.svg" alt="Ícone PM3" />
-          <a href="#" class="nav-list__link">PM3</a>
+          <a href="#" class="nav-list__link">
+            <img src="./images/alura-icons/PM3.svg" alt="Ícone PM3" />
+            PM3
+          </a>
         </li>
       </ul>
       <ul class="footer__nav-list">
         <strong class="nav-list__title">Comunidade</strong>
         <li class="nav-list__item">
-          <img
-            src="./images/alura-icons/HipstersTech.svg"
-            alt="Ícone Hipsters ponto Tech"
-          />
-          <a href="#" class="nav-list__link">Hipsters ponto Tech</a>
+          <a href="#" class="nav-list__link">
+            <img
+              src="./images/alura-icons/HipstersTech.svg"
+              alt="Ícone Hipsters ponto Tech"
+            />
+            Hipsters ponto Tech
+          </a>
         </li>
         <li class="nav-list__item">
-          <img src="./images/alura-icons/ScubaDev.svg" alt="Ícone Scuba Dev" />
-          <a href="#" class="nav-list__link">Scuba Dev</a>
+          <a href="#" class="nav-list__link">
+            <img
+              src="./images/alura-icons/ScubaDev.svg"
+              alt="Ícone Scuba Dev"
+            />
+            Scuba Dev
+          </a>
         </li>
         <li class="nav-list__item">
-          <img
-            src="./images/alura-icons/LayersTech.svg"
-            alt="Ícone Layers ponto Tech"
-          />
-          <a href="#" class="nav-list__link">Layers ponto Tech</a>
+          <a href="#" class="nav-list__link">
+            <img
+              src="./images/alura-icons/LayersTech.svg"
+              alt="Ícone Layers ponto Tech"
+            />
+            Layers ponto Tech
+          </a>
         </li>
         <li class="nav-list__item">
-          <img
-            src="./images/alura-icons/LikeABoss.svg"
-            alt="Ícone Like a Boss"
-          />
-          <a href="#" class="nav-list__link">Like a Boss</a>
+          <a href="#" class="nav-list__link">
+            <img
+              src="./images/alura-icons/LikeABoss.svg"
+              alt="Ícone Like a Boss"
+            />
+            Like a Boss
+          </a>
         </li>
         <li class="nav-list__item">
-          <img
-            src="./images/alura-icons/CarreiraSemFronteira.svg"
-            alt="Ícone Carreira sem Fronteiras"
-          />
-          <a href="#" class="nav-list__link">Carreira sem Fronteira</a>
+          <a href="#" class="nav-list__link">
+            <img
+              src="./images/alura-icons/CarreiraSemFronteira.svg"
+              alt="Ícone Carreira sem Fronteiras"
+            />
+            Carreira sem Fronteira
+          </a>
         </li>
         <li class="nav-list__item">
-          <img
-            src="./images/alura-icons/HipstersJobs.svg"
-            alt="Ícone Hipsters ponto Jobs"
-          />
-          <a href="#" class="nav-list__link">Hipsters ponto Jobs</a>
+          <a href="#" class="nav-list__link">
+            <img
+              src="./images/alura-icons/HipstersJobs.svg"
+              alt="Ícone Hipsters ponto Jobs"
+            />
+            Hipsters ponto Jobs
+          </a>
         </li>
         <li class="nav-list__item">
-          <img src="./images/alura-icons/GUJ.svg" alt="Ícone GUJ" />
-          <a href="#" class="nav-list__link">GUJ</a>
+          <a href="#" class="nav-list__link">
+            <img src="./images/alura-icons/GUJ.svg" alt="Ícone GUJ" />
+            GUJ
+          </a>
         </li>
       </ul>
     </footer>
