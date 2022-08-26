@@ -199,6 +199,12 @@
 }
 
 @media screen and (min-width: 1728px) {
+  .header .container:first-child,
+  .header .container:last-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .header__nav {
     margin-right: auto;
   }
