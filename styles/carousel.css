@@ -1,5 +1,6 @@
 .carousel {
   margin-bottom: 1.25rem;
+  position: relative;
 }
 
 .swiper-pagination {
@@ -14,6 +15,31 @@
 .swiper-button-prev,
 .swiper-button-next {
   display: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.swiper-button-prev {
+  background: url("../images/icons/carousel-back-button.svg"),
+    var(--primary-gradient);
+  background-position: center;
+  background-repeat: no-repeat;
+  left: calc(50% - 435px);
+}
+
+.swiper-button-next {
+  background: url("../images/icons/carousel-next-button.svg"),
+    var(--primary-gradient);
+  background-position: center;
+  background-repeat: no-repeat;
+  right: calc(50% - 435px);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
 }
 
 @media screen and (min-width: 1024px) {
