@@ -26,7 +26,7 @@
     var(--primary-gradient);
   background-position: center;
   background-repeat: no-repeat;
-  left: calc(50% - 435px);
+  left: 10px;
 }
 
 .swiper-button-next {
@@ -34,7 +34,7 @@
     var(--primary-gradient);
   background-position: center;
   background-repeat: no-repeat;
-  right: calc(50% - 435px);
+  right: 10px;
 }
 
 .swiper-button-prev::after,
@@ -50,6 +50,15 @@
   .swiper {
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  .swiper-wrapper .swiper-slide {
+    max-width: 190px;
+    margin-left: 56px;
+  }
+
+  .swiper-wrapper .swiper-slide:first-child {
+    margin-left: 38px;
   }
 
   .swiper-button-prev,
